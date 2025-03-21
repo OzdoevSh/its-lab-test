@@ -43,7 +43,7 @@ describe('CountryList', () => {
     render(<CountryList countries={mockCountries} currencies={mockCurrencies} />);
 
     const checkboxes = screen.getAllByRole('checkbox');
-    const checkbox = checkboxes[0]; // Первый чекбокс
+    const checkbox = checkboxes[0];
     fireEvent.click(checkbox);
 
     expect(checkbox).toBeChecked();
@@ -56,7 +56,7 @@ describe('CountryList', () => {
     fireEvent.click(switchButton);
 
     const checkboxes = screen.getAllByRole('checkbox');
-    const checkbox = checkboxes[0]; // Первый чекбокс
+    const checkbox = checkboxes[0];
     fireEvent.click(checkbox);
 
     expect(checkbox).toBeChecked();

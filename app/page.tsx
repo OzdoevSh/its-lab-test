@@ -3,10 +3,13 @@ import CountryList from './components/CountryList';
 const getCountries = async (): Promise<{ name: string; currencies: string[] }[]> => {
   return [
     { name: 'United States', currencies: ['USD'] },
-    { name: 'European Union', currencies: ['EUR'] },
-    { name: 'Japan', currencies: ['JPY'] },
-    { name: 'United Kingdom', currencies: ['GBP'] },
-    { name: 'Canada', currencies: ['CAD'] },
+    { name: 'Russian Federation', currencies: ['RUB', 'USD', 'EUR'] },
+    { name: 'Belarus', currencies: ['BYN', 'RUB', 'EUR', 'USD'] },
+    { name: 'Japan', currencies: ['JPY', 'USD'] },
+    { name: 'United Kingdom', currencies: ['GBP', 'EUR', 'USD'] },
+    { name: 'Canada', currencies: ['CAD', 'USD'] },
+    { name: 'France', currencies: ['EUR', 'USD'] },
+    { name: 'Germany', currencies: ['EUR', 'USD'] },
   ];
 };
 
