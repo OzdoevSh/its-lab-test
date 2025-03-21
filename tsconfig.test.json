@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "./.jest",
+    "moduleResolution": "node"
+  },
+  "include": ["**/*.ts", "**/*.tsx", "jest.setup.mjs"],
+  "exclude": ["node_modules"]
+}
